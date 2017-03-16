@@ -12,6 +12,7 @@ export default class TodosComponent extends React.Component{
     this.setState({
       name: "yoyoyo"
     })
+    return
   }
 
   render () {

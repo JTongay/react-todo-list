@@ -11,11 +11,16 @@ export default class App extends React.Component {
     }
   }
 
+  componentDidMount(){
+    console.log(this.refs.yo);
+  }
+
   render () {
-    console.log(this.refs);
+    console.log(this.refs.yo);
     return (
       <div>
         <h1>Booyah {this.state.name}</h1>
+        <h1>{this.refs.yo}</h1>
         <Todos name={this.state.name} ref="yo"/>
       </div>
     )
