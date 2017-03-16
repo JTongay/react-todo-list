@@ -12,16 +12,20 @@ export default class App extends React.Component {
   }
 
   componentDidMount(){
-    console.log(this.refs.yo);
+    this.refs.yo.showNewName();
+  }
+
+  showNewName() {
+    // this.setState({
+    //   name: "shit"
+    // })
   }
 
   render () {
-    console.log(this.refs.yo);
     return (
       <div>
         <h1>Booyah {this.state.name}</h1>
-        <h1>{this.refs.yo}</h1>
-        <Todos name={this.state.name} ref="yo"/>
+        <Todos name={this.state.name} myFunc={this.showNewName.bind(this)} ref="yo"/>
       </div>
     )
   }
