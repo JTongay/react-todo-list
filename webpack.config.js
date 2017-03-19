@@ -1,9 +1,9 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
-    entry: path.resolve(__dirname, 'src') + '/app/index.jsx',
+    entry: path.resolve(__dirname, 'src') + '/app/Index.js',
     output: {
         path: path.resolve(__dirname, 'dist') + '/app',
         filename: 'bundle.js',
@@ -13,8 +13,8 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.jsx$/,
-                include: path.resolve(__dirname, 'src'),
+                test: /\.js$/,
+                include: path.resolve(__dirname, 'src', 'app'),
                 loader: 'babel-loader',
                 query: {
                     presets: ['react', 'es2015']
