@@ -6,6 +6,7 @@ export class User extends React.Component {
         return (
             <div>
                 <h3>The User Page</h3>
+                <p>User Id: </p>
             </div>
         );
     }

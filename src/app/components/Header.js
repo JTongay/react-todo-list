@@ -2,7 +2,6 @@ import React from 'react'
 
 export default class HeaderComponent extends React.Component {
 
-
   render(){
     return (
       <nav className="navbar navbar-default">
@@ -10,7 +9,10 @@ export default class HeaderComponent extends React.Component {
           <div className="navbar-header">
             <ul className="nav navbar-nav">
               <li>
-                <a href="#">{this.props.homeLink}</a>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">User</a>
               </li>
             </ul>
           </div>
