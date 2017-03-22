@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 export default class HeaderComponent extends React.Component {
 
@@ -9,10 +10,10 @@ export default class HeaderComponent extends React.Component {
           <div className="navbar-header">
             <ul className="nav navbar-nav">
               <li>
-                <a href="#">Home</a>
+                <Link to={"home"} activeStyle={{color: 'blue'}}>Home</Link>
               </li>
               <li>
-                <a href="#">User</a>
+                <Link to={"user/1"} activeStyle={{color: 'blue'}}>User</Link>
               </li>
             </ul>
           </div>
