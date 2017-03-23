@@ -12,6 +12,7 @@ export default class User extends React.Component {
             <div>
                 <h3>The User Page</h3>
                 <p>User Id: {this.props.params.id}</p>
+                <div>Booyah</div>
                 <button className="btn btn-primary" onClick={this.onNavigateHome}>Go Home</button>
             </div>
         );
